@@ -312,9 +312,9 @@ int main()
                             float finalAngle = baseAngle;
                             if (player1.currentweapon.isShotgun == true) { // for shotgun spread
                                 float spread = (float)GetRandomValue(-10, 10);
-                                finalAngle += spread * DEG2RAD; // convert spread to radians b/c that is what raylib uses  and add to base angle
+                                finalAngle += spread * DEG2RAD; // convert spread to radians b/c that is what raylib uses and add to base angle
                             }
-
+                            
                             // bullets array
                             bullets[i].active   = true;
                             bullets[i].hastrail = player1.currentweapon.isSniper; // mark for trail drawing
